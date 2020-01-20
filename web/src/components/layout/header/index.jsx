@@ -1,7 +1,7 @@
 import React from 'react'
-
+import './styles.css'
 export default () =>(
-    <header>
+    <header className="header">
         <h1>
             <img alt="Sprites"/>
         </h1>
