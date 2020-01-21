@@ -1,0 +1,11 @@
+.footer{
+    display:flex;
+    justify-content: space-around;  
+    height: 100px;
+    li{
+        list-style: none;
+    }
+    p{
+        align-self: flex-end;
+    }
+}

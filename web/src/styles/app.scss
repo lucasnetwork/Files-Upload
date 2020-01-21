@@ -1,0 +1,29 @@
+@font-face{
+    font-family: Roboto;
+    src: url(../fonts/RobotoMono-Light.ttf)
+}
+*{
+    font-family: Roboto;
+}
+html,body{
+    margin:0;
+    padding: 0;
+    height: 100%;
+}
+#root{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    display: flex;
+    margin:0 50px;
+    flex-direction: row;
+    flex:1;
+    article{
+        display: flex;
+        h1,p{
+            flex:1
+        }
+    }
+}
