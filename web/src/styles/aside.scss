@@ -1,0 +1,19 @@
+.aside{
+    // visibility: hidden;
+    display: none;
+    position: absolute;
+    height:100%;
+    background-color: white;
+    width: 255px;
+    box-shadow: 1px 1px 6px 4px rgba(0,0,0,0.4);
+    z-index: 10001;
+    nav{
+        margin-top:100px;
+        li{
+            list-style: none;
+        }
+    }
+}
+.visible{
+    display: block;
+}
