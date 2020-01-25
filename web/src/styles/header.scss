@@ -1,22 +1,49 @@
+@import './variables.scss';
 .header{
-    display:flex;
-    flex-direction: row;
+    @include D-flex(row);
     justify-content: space-around;
     align-items: center;
-    height: 200px;
+    min-height: 100px;
+    box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.3);
     nav{
         display:flex;
-        align-self: flex-start;
+        align-self: center;
         list-style: none;
         text-decoration: none;
         font-size: 18px;
-        li{
-            margin: 10px;
+        font-weight: bold;
+        a{
+            text-decoration: none;
+            color:#000;
+            li{
+                margin: 10px;
+                
+            }
+        }
+        li:hover{
+            color:$colorHover;
         }
     }
 }
 .buttonToggle{
     position: absolute;
     top: 5px;
-    left:5px
+    left:5px;
+    cursor: pointer;
+}
+@media(max-width:771px){
+    .header{
+        flex-direction: column;
+        min-height: 200px;
+    };
+}
+@media(max-width:335px){
+    .header{
+        img{
+            display:none;
+        }
+        nav{
+            flex-direction: column;
+        }
+    }
 }

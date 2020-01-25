@@ -1,7 +1,9 @@
+@import "./variables.scss";
 .aside{
-    // visibility: hidden;
-    display: none;
+    visibility: hidden;
     position: absolute;
+    top:0;
+    left: 0;
     height:100%;
     background-color: white;
     width: 255px;
@@ -9,11 +11,35 @@
     z-index: 10001;
     nav{
         margin-top:100px;
-        li{
-            list-style: none;
+        font-weight: bold;
+        a{
+            text-decoration: none;
+            color:#000;
+            li{
+                padding-left: 20px;
+                list-style: none;
+                border-bottom: 1px solid #000;
+                margin-bottom:5px;
+                font-size:1.2rem;
+            }
+            li:hover{
+                color:$colorHover;
+            }
         }
+    }
+    transform: translateX(-100%);
+    transition-duration: 200ms;
+}
+@keyframes animate1{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(100%);
     }
 }
 .visible{
-    display: block;
+    visibility: visible;
+    transform: translateX(0%);
+    transition-duration: 200ms;
 }
