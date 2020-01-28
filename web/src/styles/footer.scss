@@ -2,8 +2,8 @@
 .footer{
     display:flex;
     justify-content: space-around;  
-    min-height: 40px;
-    box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.3);
+    height: 40px;
+    box-shadow: $shadowDefault;
     aside{
         font-weight: bold;
         display: flex;
@@ -14,9 +14,9 @@
             margin: 12px;
             li{
                 list-style: none;
-            }
-            li:hover{
-                color:$colorHover;
+                li:hover{
+                    color:$colorHover;
+                }
             }
         }
     }
@@ -27,7 +27,7 @@
 }
 @media(max-width:620px){
     .footer{
-        min-height: 100px;
+        height: 100px;
         flex-direction: column;
     }
 }

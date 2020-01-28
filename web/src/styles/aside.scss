@@ -1,7 +1,7 @@
 @import "./variables.scss";
 .aside{
     visibility: hidden;
-    position: absolute;
+    position: fixed;
     top:0;
     left: 0;
     height:100%;
@@ -29,14 +29,6 @@
     }
     transform: translateX(-100%);
     transition-duration: 200ms;
-}
-@keyframes animate1{
-    0%{
-        transform: translateX(0%);
-    }
-    100%{
-        transform: translateX(100%);
-    }
 }
 .visible{
     visibility: visible;

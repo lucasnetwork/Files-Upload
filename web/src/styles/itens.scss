@@ -1,7 +1,21 @@
-.sprite{
+@import './variables.scss';
+.sprite{ 
     display: flex;
-    flex-direction: column;
-    width:200px;
-    height: 200px;
-    border: 1px solid #000;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    article{
+        @include D-flex(column);
+        justify-content: space-around;
+        width:300px;
+        height: 300px;
+        border: 1px solid #000;
+        margin:10px;
+        p{
+            text-align: center;
+        }
+        img{
+        margin:0 auto;
+            width:200px
+        }
+    }
 }

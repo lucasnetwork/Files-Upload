@@ -1,4 +1,5 @@
 $colorHover:#53A2BE;
+$shadowDefault: 0px 1px 10px 1px rgba(0,0,0,0.3);
 @mixin D-flex($direction){
     display:flex;
     flex-direction: $direction ;
