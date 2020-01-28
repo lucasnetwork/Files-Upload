@@ -1,0 +1,9 @@
+@import './variables.scss';
+.form{
+    @include D-flex(column);
+    input{
+        border:none;
+        border-bottom: 1px solid #ddd;
+        outline: none;
+    }
+}
