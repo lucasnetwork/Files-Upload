@@ -1,14 +1,14 @@
 import React,{useState, useEffect, useContext} from 'react'
 import {ButtonToggle} from './Button/Toggle'
 import {Toggle} from './../../context'
-import axios from 'axios'
+import {api} from '../../services/api'
 import './../../styles/aside.scss'
 export default () => {
-    const {visible}= useContext(Toggle)
+    const {visible,setGeneration}= useContext(Toggle)
     const [generations,setGenerations] = useState([])
     useEffect(() =>{
         async function getGenerations(){
-            const generations = await axios.get('http://localhost:3333/generation')
+            const generations = await api.get('generation')
             setGenerations([...generations.data])
         }
         getGenerations()
@@ -20,9 +20,9 @@ export default () => {
             <ButtonToggle/>
             <nav>
                 {generations.map(generation=>(
-                    <li key={generation._id}>
-                        {generation.name}
-                    </li>
+                    <a href="/itens" key={generation._id} onClick={setGeneration(generation.name)}>
+                        <li key={generation._id}>{generation.name}</li>
+                    </a>
                 ))}
             </nav>
         </aside>

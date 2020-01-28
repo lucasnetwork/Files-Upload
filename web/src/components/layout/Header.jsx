@@ -7,16 +7,18 @@ export default () =>(
         <ButtonToggle/>
         <img src="https://www.spriters-resource.com/resources/images/light/header/logo.png" alt="Sprites"/>
         <nav>
-            <Link >
+            <Link to="/">
                 <li>Home</li>
             </Link>
-            <Link >
-                <li>Forum</li>
+            <Link to="/adm" >
+                <li>Adm</li>
             </Link>
             <Link >
                 <li>Seach</li>
             </Link>
-            <li>Community</li>
+            <Link>
+                <li>Community</li>
+            </Link>
         </nav>
     </header>
 )

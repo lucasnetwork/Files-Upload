@@ -5,8 +5,8 @@ import {Toggle} from './../../../context'
 export const ButtonToggle = (props)=>{
     const {visible,setVisible} = useContext(Toggle)
     return(
-        <button className="buttonToggle" onClick={() => setVisible(!visible)}>
+        <i className="buttonToggle" onClick={() => setVisible(!visible)}>
             <FontAwesomeIcon size="2x" icon={faBars} className="name"/>
-        </button>
+        </i>
     )
 }
