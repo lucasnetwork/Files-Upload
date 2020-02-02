@@ -11,6 +11,13 @@ html,body{
     padding: 0;
     min-height: 100%;
 }
+.dark{
+    background: #222 !important;
+    *{
+        color:white
+    }
+}
+
 #root{
     height: 100vh;
     @include D-flex(column);

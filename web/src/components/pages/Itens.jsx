@@ -1,10 +1,10 @@
 import React,{useState,useEffect,useContext} from 'react'
 import {api} from './../../services/api'
-import {Toggle} from '../../context'
+import {Context} from '../../context'
 import '../../styles/itens.scss'
 function Itens(){
     const [sprites,setSprites] = useState([])
-    const {generation} = useContext(Toggle)
+    const {generation} = useContext(Context)
     useEffect(() =>{
         async function getSprites(){
             const sprites = await api.get("sprite",{params:{name:generation}})

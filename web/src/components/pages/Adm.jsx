@@ -32,7 +32,7 @@ export default () => {
                 <label>Geração</label>
                 <input type="text" name="generation"  required onChange={(e) => setGeneration(e.target.value)} value={generation}/>
                 
-                <label for="file">Arquivo</label>
+                <label >Arquivo</label>
                 <input type="file"  name="file" required onChange={(e) => {setFile(e.target.files[0])}}/>
             </form>
             <button onClick={handleSubmit}>Enviar</button>

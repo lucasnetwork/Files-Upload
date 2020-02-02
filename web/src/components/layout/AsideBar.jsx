@@ -1,10 +1,11 @@
 import React,{useState, useEffect, useContext} from 'react'
+import {Link} from 'react-router-dom'
 import {ButtonToggle} from './Button/Toggle'
-import {Toggle} from './../../context'
+import {Context} from './../../context'
 import {api} from '../../services/api'
 import './../../styles/aside.scss'
 export default () => {
-    const {visible,setGeneration}= useContext(Toggle)
+    const {visible,setGeneration,dark}= useContext(Context)
     const [generations,setGenerations] = useState([])
     useEffect(() =>{
         async function getGenerations(){
@@ -16,13 +17,13 @@ export default () => {
 
     return (
     <>
-        <aside className={`aside ${(visible) ? "visible":""}`}  >
+        <aside className={`aside ${(visible) ? "visible":""} ${(dark) ?'dark aside-dark' :'aside-light'}`}  >
             <ButtonToggle/>
             <nav>
                 {generations.map(generation=>(
-                    <a href="/itens" key={generation._id} onClick={setGeneration(generation.name)}>
+                    <Link to="/itens" key={generation._id} onClick={setGeneration(generation.name)}>
                         <li key={generation._id}>{generation.name}</li>
-                    </a>
+                    </Link>
                 ))}
             </nav>
         </aside>
