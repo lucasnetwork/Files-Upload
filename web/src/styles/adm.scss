@@ -1,9 +1,28 @@
 @import './variables.scss';
 .form{
+    margin:auto auto;
     @include D-flex(column);
     input{
         border:none;
         border-bottom: 1px solid #ddd;
         outline: none;
     }
+    input[type="file"]{
+        border:none;
+    }
+    button{
+        margin-top: 5px;
+        color:black;
+        border-radius: 3px;
+        outline: none;
+        border: none;
+        height: 30px;
+    }
+    button:active{
+        background-color: #aaa;
+
+    }
+}
+.input-dark input{
+    background-color: #222;
 }

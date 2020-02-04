@@ -19,12 +19,6 @@ export default () =>{
             <Link to="/adm" >
                 <li>Adm</li>
             </Link>
-            <Link >
-                <li>Seach</li>
-            </Link>
-            <Link>
-                <li>Community</li>
-            </Link>
         </nav>
         <i onClick={() =>setDark(!dark)}>
             <FontAwesomeIcon icon={(dark)? faMoon : faSun}/>
