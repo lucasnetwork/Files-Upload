@@ -1,12 +1,13 @@
-import React,{useState} from 'react'
+import React,{useState,useContext} from 'react'
 import {api} from '../../services/api'
 import '../../styles/adm.scss'
+import {Context} from '../../context'
 export default () => {
     const [title,setTitle] = useState("")
     const [author,setAuthor] = useState("")
     const [generation,setGeneration] = useState("")
     const [file,setFile] = useState("")
-
+    const {dark} = useContext(Context)
     function handleSubmit(e){
         e.preventDefault()
         const form = new FormData()
@@ -22,7 +23,7 @@ export default () => {
     }
     return(
         <>
-            <form className="form">
+            <form className={`form ${(dark)?'input-dark':''}`}>
                 <label>Nome</label>
                 <input type="text" name="title"  required onChange={(e) => setTitle(e.target.value)} value={title}/>
                 
@@ -34,8 +35,8 @@ export default () => {
                 
                 <label >Arquivo</label>
                 <input type="file"  name="file" required onChange={(e) => {setFile(e.target.files[0])}}/>
+                <button className="form-button" onClick={handleSubmit}>Enviar</button>
             </form>
-            <button onClick={handleSubmit}>Enviar</button>
         </>
     )
 }
