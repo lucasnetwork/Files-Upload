@@ -4,7 +4,7 @@ import mongoose from 'mongoose'
 import routes from './routes'
 import bodyParser from 'body-parser'
 const app = express()
-mongoose.connect("mongodb+srv://lucas:1234@cluster0-5dcar.mongodb.net/test?retryWrites=true&w=majority",{
+mongoose.connect("mongodb+srv://<userName>:<password>@cluster0-5dcar.mongodb.net/test?retryWrites=true&w=majority",{
     useNewUrlParser:true,
     useUnifiedTopology:true,
 })
