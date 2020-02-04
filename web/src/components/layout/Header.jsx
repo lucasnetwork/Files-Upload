@@ -11,7 +11,7 @@ export default () =>{
     return(
     <header className='header'>
         <ButtonToggle/>
-        <h1>Data Sprite</h1>
+        <h1>Files Upload</h1>
         <nav >
             <Link to="/">
                 <li>Home</li>

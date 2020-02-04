@@ -5,13 +5,14 @@ export default () =>(
         <article className="article-main">
             <h1>Sobre</h1>
             <p>
-                This website is a part of several websites under the belt of "The VG Resource" - websites that are dedicated to the collection, archival, 
-                and appreciation of materials from video games.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Integer sodales, est a lobortis mollis, diam magna tincidunt nulla, quis volutpat.
             </p>
         </article>
         <article className="article-main">
             <p>
-                we have many sprites of very generations of consoles
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Integer sodales, est a lobortis mollis, diam magna tincidunt nulla, quis volutpat.
             </p>
             <h1>Collection</h1>
         </article>
