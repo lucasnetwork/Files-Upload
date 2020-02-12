@@ -3,6 +3,7 @@ import cors from 'cors'
 import mongoose from 'mongoose'
 import routes from './routes'
 import bodyParser from 'body-parser'
+import {connect} from './.env'
 
 const app = express()
 mongoose.connect(connect,{
