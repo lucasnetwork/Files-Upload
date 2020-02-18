@@ -1,8 +1,8 @@
 import express from 'express'
-import cors from 'cors'
 import mongoose from 'mongoose'
-import routes from './routes'
 import bodyParser from 'body-parser'
+import cors from 'cors'
+import routes from './routes'
 import {connect} from './.env'
 
 const app = express()
@@ -10,9 +10,7 @@ mongoose.connect(connect,{
     useNewUrlParser:true,
     useUnifiedTopology:true,
 })
-
 app.use(bodyParser.urlencoded({extended:true}))
-
 app.use(cors())
 app.use(express.json()) 
 app.use(routes)
