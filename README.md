@@ -15,7 +15,7 @@ NodeJs
     or
     npm init
 ## Execute
-Rotas do insomnia
+Rotes in Insomnia
 
 [![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Awesome%20Api&uri=https%3A%2F%2Fraw.githubusercontent.com%2Flucasnetwork%2FFiles-Upload%2Fmaster%2FInsomnia-Routes-test.json)
 
