@@ -1,7 +1,14 @@
 # Data Files
 ![](backend/src/tmp/img/HomeLight.png)
+
+![](backend/src/tmp/img/LoginLight.png)
+
+![](backend/src/tmp/img/AdmLight.png)
+
 Dark Mode
 ![](backend/src/tmp/img/HomeDark.png)
+
+![](backend/src/tmp/img/AdmDark.png)
 The Project was created in reactJs and NodeJs, it can store data and files local.
 
 ## Prerequisites
