@@ -16,7 +16,7 @@ function Itens(){
         <div className="sprite">
             {sprites.map(sprite =>(
                 <article  key={sprite._id}>
-                    <img src={`http://localhost:3333/sprite/${sprite.img}`} alt={sprite.title} />
+                    <img src={api.get(`sprite/${sprite.img}`)} alt={sprite.title} />
                     <p>{sprite.title}</p>
                     <p>{sprite.author}</p>
                     <p>{sprite.generation}</p>
