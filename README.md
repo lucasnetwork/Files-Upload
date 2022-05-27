@@ -2,6 +2,13 @@
 <div>
  <img src="https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge&logo=appveyor"/>
     </div>
+    
+## Tecnologias usadas
+<div style="display:flex">
+ <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white"/>
+ <img src="https://img.shields.io/badge/Multer-43853D?style=for-the-badge&logo=multer.js&logoColor=white"/>
+ <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
+    </div>
 ![](backend/src/tmp/img/HomeLight.png)
 
 ![](backend/src/tmp/img/LoginLight.png)
