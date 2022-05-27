@@ -1,4 +1,7 @@
 # Data Files
+<div>
+ <img src="https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge&logo=appveyor"/>
+    </div>
 ![](backend/src/tmp/img/HomeLight.png)
 
 ![](backend/src/tmp/img/LoginLight.png)
